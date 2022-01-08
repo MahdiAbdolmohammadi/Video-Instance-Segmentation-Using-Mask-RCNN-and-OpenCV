@@ -3,7 +3,7 @@ from ImageInstances import instance_segmentation
 
 def VidInstance(inputvideo, outputvideo, fps, width, height, frame_skip):
     # video = cv2.VideoWriter(outputvideo, cv2.VideoWriter_fourcc(*'DIVX'), fps, (width, height))
-    video = cv2.VideoWriter("./traficmask.avi", cv2.VideoWriter_fourcc(*'DIVX'), 5, (640, 360))
+    video = cv2.VideoWriter("./examples/traficmask.avi", cv2.VideoWriter_fourcc(*'DIVX'), 5, (640, 360))
     cap = cv2.VideoCapture(inputvideo)
 
     i = 0
